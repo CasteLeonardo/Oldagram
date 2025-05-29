@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif; 
+    background-color: #C6C6C6;
+}
+
+/* containers */
+
+.container{
+    margin: 0 auto;
+    max-width: 375px;
+    background-color: #FFFFFF;
+}
+
+header{
+    display: flex;   
+    align-items: center;
+    padding: 0;
+    border-bottom: solid 1px #C6C6C6;
+}
+
+section {
+    transition: box-shadow 0.3s ease;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    margin: 1px 0;
+}
+
+/* Text formats */
+
+.post-name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.post-description,
+.likes-count{
+    font-size: 13px;
+}
+
+.post-location{
+    font-size: 12px;
+    font-style: italic;
+    color: #555;
+}
+
+.post-name,
+.post-location{
+    margin: 0;
+    padding: 0;
+}
+
+.likes-count{
+   margin: 0 10px; 
+}   
+
+.post-description{
+    margin: 7px 10px; 
+    padding-bottom: 6px;     
+}
+
+.post-date {
+    font-size: 11px;
+    margin: 2px 10px 0;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+/* Images and logos */
+
+.logo{
+    width: 127px;
+}
+
+.post-avatar{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    transition: box-shadow 0.2s ease;
+}
+
+.post-img{
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.post-icon{
+    width: 24px;
+    display: inline;
+    padding: 10px 4px;
+}
+
+/* Hovers and Animations */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section:not(:last-child) {
+    border-bottom: 8px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.post-avatar:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.post-img:hover {
+    transform: scale(1.01);
+    filter: brightness(0.95);
+    cursor: pointer;
+}
+
+.post-icon:hover {
+    transform: scale(1.25);
+    filter: brightness(1.4) saturate(1.2);
+}
+
+.post-icon:hover {
+    filter: invert(50%) sepia(90%) saturate(1000%) hue-rotate(-20deg) brightness(100%) contrast(100%);
+}
+
+
+
+
+
+
+
+
